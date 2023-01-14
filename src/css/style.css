@@ -71,6 +71,7 @@ main{
 
 .card .image{
     position: relative;
+    line-height: 0;
 }
 
 .card .image::before{
@@ -79,7 +80,8 @@ main{
     height: 100%;
     width: 100%;
     position: absolute;
-    opacity: 0.4;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
 
 @media(max-width: 1099px){
