@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="information">
+          <div class="description">
+            <h1 class="title">
+              Get <span>insights</span> that help your business grow.
+            </h1>
+
+            <p class="description-text">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
+          <ul class="social-info">
+            <li class="info">
+              <h2 class="counter">10k+</h2>
+              <p class="counter-type">companies</p>
+            </li>
+            <li class="info">
+              <h2 class="counter">314</h2>
+              <p class="counter-type">templates</p>
+            </li>
+            <li class="info">
+              <h2 class="counter">12M+</h2>
+              <p class="counter-type">queries</p>
+            </li>
+          </ul>
+        </div>
+        <picture class="image">
+          <source media="(min-width:1100px)" srcset="./src/images/image-header-desktop.jpg">
+          <img src="./src/images/image-header-mobile.jpg" alt="People working in the ofice">
+        </picture>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Vinicius Montibeller</a>.
+    </footer>
+  </body>
+</html>

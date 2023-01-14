@@ -1,0 +1,118 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--primary-dark);
+    font-family: 'Inter', sans-serif;
+    color: var(--neutral-soft);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: var(--primary-medium);
+    display: flex;
+    max-width: 111rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    margin: 3rem;
+}
+
+.card .information{
+    margin: 7.2rem 7.2rem 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .information .description .title{
+    font-size: 3.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.card .information .description .title span{
+    color: var(--primary-soft);
+}
+
+.card .information .description .description-text{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-right: 3.5rem;
+    color: var(--neutral);
+}
+
+.card .information .social-info{
+    display: flex;
+    gap: 6.3rem;
+}
+
+.card .information .social-info .info .counter{
+    font-size: 2.4rem;
+    margin-bottom: 0.7rem;
+}
+
+.card .information .social-info .info .counter-type{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--neutral);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card img{
+    height: 100%;
+}
+
+.card .image{
+    position: relative;
+}
+
+.card .image::before{
+    content: '';
+    background-color: var(--primary-soft);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+}
+
+@media(max-width: 1099px){
+    .card{
+        flex-direction: column-reverse;
+        max-width: 33rem;
+    }
+
+    .card img{
+        width: 100%;
+    }
+
+    .card .information{
+        margin: 4rem 3rem 4rem;
+        text-align: center;
+    }
+
+    .card .information .description .title{
+        font-size: 2.8rem;
+        margin-bottom: 1.8rem;
+        line-height: 3.1rem;
+    }
+
+    .card .information .description .description-text{
+        margin-right: 0; 
+        margin-bottom: 3.8rem;
+    }
+
+    .card .information .social-info{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } 
